@@ -17,5 +17,6 @@ int main()
 	king->setWeapon(new KnifeBehavior);
 	king->fight();
 
+
 	return 0;
 }
