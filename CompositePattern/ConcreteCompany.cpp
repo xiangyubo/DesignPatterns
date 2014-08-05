@@ -8,7 +8,15 @@ void Company::addDepartment(BaseDepartment *d)
 
 void Company::removeDepartment(BaseDepartment *d)
 {
-	
+	for(auto it = departments.begin(); it != departments.end(); ++it)
+	{
+		if((*it) == d)
+		{
+			static_cast<Company *>(*it)->parentCompany = nullptr;
+			departments.erase(it);
+			break;
+		}
+	}
 }
 
 

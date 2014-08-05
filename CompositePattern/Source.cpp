@@ -21,5 +21,9 @@ int main()
 	littleCompany.addDepartment(&part7);
 
 	NetEase.getDescription(std::string(""));
+	
+	NetEase.removeDepartment(&part3);
+	NetEase.removeDepartment(&part4);
+	NetEase.getDescription(std::string(""));
 	return 0;
 }
